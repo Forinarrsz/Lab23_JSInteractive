@@ -29,3 +29,9 @@ form.addEventListener('submit', (e) => {
 `;
     output.style.display = 'block';
 });
+
+document.getElementById('clear-btn').addEventListener('click', () => {
+    form.reset();
+    document.getElementById('output').style.display = 'none';
+    document.querySelectorAll('input').forEach(i => i.style.borderColor = '');
+});
