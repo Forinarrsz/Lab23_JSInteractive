@@ -35,3 +35,4 @@ document.getElementById('clear-btn').addEventListener('click', () => {
     document.getElementById('output').style.display = 'none';
     document.querySelectorAll('input').forEach(i => i.style.borderColor = '');
 });
+//complete
