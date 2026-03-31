@@ -19,5 +19,13 @@ form.addEventListener('submit', (e) => {
         alert('Пожалуйста, заполните все поля!');
         return;
     }
-
+    const output = document.getElementById('output');
+    output.innerHTML = `
+    <h3>Данные сохранены:</h3>
+    <p>Имя: ${document.getElementById('name').value}</p>
+    <p>Возраст: ${document.getElementById('age').value}</p>
+    <p>Город: ${document.getElementById('city').value}</p>
+    <p>Хобби: ${document.getElementById('hobby').value}</p>
+`;
+    output.style.display = 'block';
 });
